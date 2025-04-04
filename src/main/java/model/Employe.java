@@ -1,14 +1,16 @@
 package model;
 
-import model.Personne;
+class Employe extends Personne {
+    protected int numeroEmploye;
+    protected String dateEmbauche;
 
-// Classe Employe qui hérite de Personne
-public class Employe extends Personne {
-    private String role;
+    public Employe(int identifiant, String nom, String adresse, String contact, int numeroEmploye, String dateEmbauche) {
+        super(identifiant, nom, adresse, contact);
+        this.numeroEmploye = numeroEmploye;
+        this.dateEmbauche = dateEmbauche;
+    }
 
-    // Constructeur
-    public Employe(int id, String nom, String prenom, String adresse, String email, String telephone, String role) {
-        super(id, nom, prenom, adresse, email, telephone);
-        this.role = role;
+    public String obtenirRole() {
+        return "Employé";
     }
 }
