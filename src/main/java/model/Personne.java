@@ -1,19 +1,19 @@
 package model;
 
-public class Personne {
-    protected int id;
+class Personne {
+    protected int identifiant;
     protected String nom;
-    protected String prenom;
     protected String adresse;
-    protected String email;
-    protected String telephone;
+    protected String contact;
 
-    public Personne(int id, String nom, String prenom, String adresse, String email, String telephone) {
-        this.id = id;
+    public Personne(int identifiant, String nom, String adresse, String contact) {
+        this.identifiant = identifiant;
         this.nom = nom;
-        this.prenom = prenom;
         this.adresse = adresse;
-        this.email = email;
-        this.telephone = telephone;
+        this.contact = contact;
+    }
+
+    public void obtenirInfos() {
+        System.out.println("ID: " + identifiant + ", Nom: " + nom + ", Adresse: " + adresse + ", Contact: " + contact);
     }
 }

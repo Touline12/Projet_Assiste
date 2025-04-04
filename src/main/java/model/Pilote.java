@@ -1,10 +1,17 @@
 package model;
 
-public class Pilote extends Employe {
+class Pilote extends Employe {
     private String licence;
+    private int heuresDeVol;
 
-    public Pilote(int id, String nom, String prenom, String adresse, String email, String telephone, String role, String licence) {
-        super(id, nom, prenom, adresse, email, telephone, role);
+    public Pilote(int identifiant, String nom, String adresse, String contact, int numeroEmploye, String dateEmbauche, String licence, int heuresDeVol) {
+        super(identifiant, nom, adresse, contact, numeroEmploye, dateEmbauche);
         this.licence = licence;
+        this.heuresDeVol = heuresDeVol;
+    }
+
+    public void affecterVol() {
+        System.out.println("Pilote affecté à un vol");
     }
 }
+
