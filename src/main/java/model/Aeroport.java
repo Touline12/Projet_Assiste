@@ -1,3 +1,5 @@
+package src.main.java.model;
+
 public class Aeroport {
 
     private String nom;
@@ -8,6 +10,10 @@ public class Aeroport {
         this.nom = nom;
         this.ville = ville;
         this.description = description;
+    }
+
+    public void affecterVol() {
+        System.out.println("Vol affecté à l'aéroport " + nom);
     }
 
 }
