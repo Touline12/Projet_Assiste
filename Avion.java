@@ -1,4 +1,4 @@
-class Avion {
+public class Avion {
 
     private String immatriculation;
     private String modele;
